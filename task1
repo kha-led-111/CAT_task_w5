@@ -1,0 +1,24 @@
+using System.Threading;
+
+
+namespace solving
+{
+    internal class Program
+    {
+        static async Task Main(string[] args)
+        {
+            string data = await fetch();
+            Console.WriteLine("the data is fitched");
+
+
+        }
+
+
+        public static async Task<string> fetch()
+        {
+            Task.Delay(1000);
+            return "fetching data";
+        }
+
+    }
+}
